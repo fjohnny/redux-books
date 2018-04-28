@@ -27,3 +27,6 @@ Interested in learning [Redux](https://www.udemy.com/react-redux/)?
   - This action gets wired to ```book-details``` reducer using ```mapDispatchToProps(dispatch)``` function (see [BooksReducer](./src/reducers/reducer_books.js)) - This ensures that this reducer gets informed when ```selectBook``` is called
   - This action creator is called on onClick event referenced as ```this.props.selectBook(book)``` passing the book it was clicked on (see [BookList](./src/containers/book-list.js))  
   - Active Books reducer checks for BOOK_SELECTED action and returns payload which in this case is book (see [activeBook](./src/reducers/reducer_active_book.js))
+
+  
+- See the example of conditional redering in [BookDetails](./src/containers/book-details.js) container - covering the initial state when activedBook is not defined (or null)
