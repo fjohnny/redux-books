@@ -39,7 +39,7 @@ function mapDispatchToProps(dispatch) {
     return bindActionCreators({selectBook : selectBook}, dispatch);
 }
 
-// Promot BookList form a component to a container - it needs to know 
+// Promote BookList form a component to a container - it needs to know 
 // about this new dispatch method, selectBook. 
 // Make it available as a prop
 export default connect(mapStateToProps, mapDispatchToProps)(BookList);
